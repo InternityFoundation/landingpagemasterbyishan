@@ -10,65 +10,132 @@
   <link href="css/style.css" rel="stylesheet" media="screen">
   <link href="color/default.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/custom/sliderStyle.css"/>
+
 <!--      <link rel="stylesheet" href="css/testcss.css">-->
 
   <script src="js/modernizr.custom.js"></script>
-  <!-- =======================================================
-    Theme Name: Mamba
-    Theme URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
-  <div class="menu-area">
-    <div id="dl-menu" class="dl-menuwrapper">
-      <button class="dl-trigger">Open Menu</button>
-      <ul class="dl-menu">
-        <li>
-          <a href="#intro">About us</a>
-        </li>
-        <li><a href="#about">Our Impact</a></li>
-        <li><a href="#services">What We do?</a></li>
-        <li><a href="#works">Contribute</a></li>
-        <li><a href="#joinus">Join us</a></li>
-        <li><a href="#ourblog">Our Blog</a></li>
-        
-		<li>
-          <a href="#">Sub Menu</a>
-          <ul class="dl-submenu">
-            <li><a href="#">Sub menu</a></li>
-            <li><a href="#">Sub menu</a></li>
-          </ul>
-        </li>
-      </ul>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="menu-area">
+      <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+          <li>
+            <a href="#intro">About us</a>
+            <ul class="dl-submenu">
+              <li><a href="#">Beginning</a></li>
+              <li><a href="#">Vision and Mission</a></li>
+              <li><a href="#">Legal Status</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#about">Our Impact</a>
+            <ul class="dl-submenu">
+              <li>
+                <li><a href="#">Student Impact</a></li>
+                <li><a href="#">Volunteer Impact</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#services">What We do?</a>
+            <ul class="dl-submenu">
+              <li>
+                <li><a href="#">Our Model</a></li>
+                <li></li><a href="#">Learning Structure</a></li>
+                <li></li><a href="#">Programming</a></li>
+                <li></li><a href="#">Initiatives</a></li>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#works">Contribute</a>
+            <ul class="dl-submenu">
+              <li>
+                <a href="#">Our Team</a>
+                <a href="#">Our Partners</a>
+                <a href="#">Donate</a>
+                <a href="#">Financials</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#joinus">Join us</a>
+            <ul class="dl-submenu">
+              <li><a href="forms/vol_form/vol_form.html">Volunteer</a></li>
+              <li><a href="forms/corp_part/corp_form.html">Corporate Partnership</a></li>
+              <li><a href="forms/mem_form/mem_form.html">Become Member</a></li>
+              <li><a href="forms/inter_form/inter_form.html">Internship</a></li>
+              <li><a href="forms/camp_form/camp_form.html">Campus Ambassador</a></li>
+            </ul>
+          </li>
+          <li><a href="#ourblog">Our Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <a href="#">Events & Meetups</a>
+            <ul class="dl-submenu">
+              <li><a href="#">Online Events</a></li>
+              <li><a href="#">Offline Events</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /dl-menuwrapper -->
     </div>
-    <!-- /dl-menuwrapper -->
-  </div>
-
-  <!-- intro area -->
-  <div id="intro">
-
-    <div class="intro-text">
-      <div class="container">
-        <div class="row">
-
-
-          <div class="col-md-12">
-
-            <div class="brand">
-              <h1><a href="index.html">Mamba</a></h1>
-              <div class="line-spacer"></div>
-              <p><span>Awesome Bootstrap template</span></p>
+    
+    <!-- intro area -->
+    <header>
+      <div class="carousel slide" data-ride="carousel" data-interval="8000" id="slideshow">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/slideshow/image1.jpg" />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Slide One</h3> -->
+              <p>Making the creators instead of users of technology</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/slideshow/image2.jpg" />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Slide Two</h3> -->
+              <p>Together we win</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/slideshow/image3.jpg" />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Slide three</h3> -->
+              <p>Creating an ecosystem of Innovation & Contribution.<br>We call it 'The Internity Ecosystem'</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/slideshow/image4.jpg" />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h3>Slide four</h3> -->
+              <p>Text for the slide four</p>
             </div>
           </div>
         </div>
       </div>
+      <a href="#slideshow" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      
+      <!-- <ul class="carousel-indicators">
+        <li data-target="#slideshow" data-slide-to="0"></li>
+        <li data-target="#slideshow" data-slide-to="1"></li>
+        <li data-target="#slideshow" data-slide-to="2"></li>
+        <li data-target="#slideshow" data-slide-to="3"></li>
+      </ul> -->
     </div>
-
-  </div>
-
+  </header>
 
 
 
